@@ -24,7 +24,7 @@ public class Main {
             System.out.println("Menu:");
             System.out.println("1 - Adicionar Pokemon");
             System.out.println("2 - Pokedex");
-            System.out.println("3 - Capturar um pokemon");
+            System.out.println("3 - :");
             System.out.println("10 - Sair");
             System.out.println("-----------------------------------");
             escolha = sc.nextInt();
@@ -71,13 +71,10 @@ public class Main {
                     break;
 
                 case 3:
-                    sc.nextLine();
-                    System.out.print("Escolha a posicao do carro para alugar: ");
-                    escolheCarro = sc.nextInt();
-                    //loca.alugarCarro(escolheCarro);
                     break;
                 case 10:
                     break;
+
 
             }
 
