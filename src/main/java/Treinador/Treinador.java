@@ -3,13 +3,21 @@ package Treinador;
 import Pokemon.Pokemon;
 
 public class Treinador {
-    public String nome;
+    private String nickname;
     public String gen;
     Pokemon principal[];
 
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
     public Treinador(){
 
-        principal = new Pokemon[5];
+        principal = new Pokemon[10];
     }
     boolean flagg = true;
     public void adicionarPokemon(Pokemon principal) {
@@ -34,7 +42,7 @@ public class Treinador {
     }
 
         public void mostraInformacao() {
-            System.out.println("Nome da treinador: " + nome);
+            System.out.println("Nome do treinador: " + getNickname());
             System.out.println("Genero: " + gen);
             for (int i = 0; i < principal.length; i++) {
                 if (principal[i] != null) {
